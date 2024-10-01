@@ -1,5 +1,6 @@
 # Positioning tasks
 ## Position thyself,elsewere,yet elsewere
+Clubbed the three tasks together as they were similar 
 ## Commands:
    ``` /challenge/run
 Incorrect...
@@ -9,4 +10,4 @@ hacker@paths~position-elsewhere:~$ cd /var/lib/apt/lists
 hacker@paths~position-elsewhere:/var/lib/apt/lists$ /challenge/run
 Correct!!!
 /challenge/run is an absolute path, invoked from the right directory!
-Here is your flag:
+Here is your flag
