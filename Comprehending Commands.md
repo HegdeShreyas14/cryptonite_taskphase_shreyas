@@ -1,6 +1,6 @@
 # Comprehending Commands 
 ## Challenges 1 to 8:
-### Learnings:Learnt use of multiple commands such as mkdir,cat,grep,touch ,ls and cd.
+### Learnings:Learnt use of multiple commands such as cat,grep,touch ,ls and cd.
 ### Most of the tasks were straight forward and reading the instructions helped solve the problem.
 
 ### References:Did not use reference other than the given problem statements
@@ -108,6 +108,6 @@ hacker@commands~an-epic-filesystem-quest:/opt/radare2/shlr/spp$
 ```
 ### Learnings:Better understanding of cat function and patience 
 ### References: Discussion with friends.
-
-
-~~~##
+## Challenge 10:Making Directories
+### Learnings:Learnt the use of mkdir command
+### References:None 
