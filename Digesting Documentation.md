@@ -214,7 +214,27 @@ Correct usage! Your flag: pwn.college{E8mRW9DBh1DCe3BTGvaaQtMzsu4.ddjM4QDL1kTN0c
 ### Learnings: Learnt use of --help command
 ### Reference:None 
 
+## Help For BuiltIn
+###
+```
+ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
 
+    Options:
+      --fortune         display a fortune
+      --version         display the version
+      --secret VALUE    prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "oku1zHIz".
+hacker@man~help-for-builtins:~$ /challenge/challenge --secret oku1zHIz
+ssh-entrypoint: /challenge/challenge: No such file or directory
+hacker@man~help-for-builtins:~$ challenge --secret oku1zHIz
+Correct! Here is your flag!
+pwn.college{oku1zHIzgAT5c9mvdEHgsP7krmA.dRTM5QDL1kTN0czW}
+```
+### Learnings: Learnt use of help command to get list of builtins
 
 
 ##
