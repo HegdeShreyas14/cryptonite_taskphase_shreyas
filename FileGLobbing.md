@@ -8,6 +8,7 @@ hacker@globbing~matching-with-:/challenge$ ./run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{opgJNQpZST-ZshnzklSX5FlS0Nb.dFjM4QDL1kTN0czW}
 ```
+References:None used.
 
 
 
@@ -22,6 +23,8 @@ hacker@globbing~matching-with-:/challenge$ /challenge/run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{Q067K0bEG3RpG6DBPw335qbXXcy.dJjM4QDL1kTN0czW}
 ```
+Used the problem statement to reach the flag.
+References:None used.
 ## Matching with []
 ### Learnings: Learnt about selective matching of [] command
 ```
@@ -34,4 +37,23 @@ hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[bash]
 You got it! Here is your flag!
 pwn.college{Qvp0QVMdlBn2FZkaF86LpeweeVS.dNjM4QDL1kTN0czW}
 ```
+References:None used.
+
+## Matching paths with []
+
+
+```
+ cd /challenge/files
+hacker@globbing~matching-paths-with-:/challenge/files$ /challenge/run files_[bash]
+Error: please run with a working directory of /home/hacker!
+hacker@globbing~matching-paths-with-:/challenge/files$ /challenge/run/file_[bash]
+ssh-entrypoint: /challenge/run/file_[bash]: Not a directory
+hacker@globbing~matching-paths-with-:/challenge/files$ cd ~
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[bash]
+You got it! Here is your flag!
+pwn.college{Qkvq1yfQsoJCUhXt2iw2E9HwDx7.dRjM4QDL1kTN0czW}
+```
+### References: Discussed with my friends
+
+
 
