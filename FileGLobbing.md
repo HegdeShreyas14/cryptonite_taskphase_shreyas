@@ -66,6 +66,22 @@ pwn.college{kzDaFyJ6fd7SPOGU6XhzwW2WWkK.dVjM4QDL1kTN0czW}
 ```
 ### Learnings: 
 
+## Exclusionary globbing 
+```
+ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]
+Your expansion did not expand to the requested files (amazing beautiful
+challenging delightful educational fantastic great happy incredible jovial kind
+laughing magical optimistic queenly radiant splendid thrilling uplifting
+victorious xenial youthful zesty).
+Instead, it expanded to:
+[!pwn]
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [!pwn]*
+You got it! Here is your flag!
+pwn.college{UrfXat1DqgrLBYCuT5YxWGt7qsG.dZjM4QDL1kTN0czW}
+```
+Learnings: Combined all the learnings in the previous tasks of the module
+### References:Discussed with friends
 
 
 
