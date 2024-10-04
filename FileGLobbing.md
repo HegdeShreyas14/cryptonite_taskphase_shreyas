@@ -22,4 +22,16 @@ hacker@globbing~matching-with-:/challenge$ /challenge/run
 You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{Q067K0bEG3RpG6DBPw335qbXXcy.dJjM4QDL1kTN0czW}
 ```
+## Matching with []
+### Learnings: Learnt about selective matching of [] command
+```
+ cd /challenge/files
+hacker@globbing~matching-with-:/challenge/files$ /challenge/run /challenge/files/file_[bash]
+Your expansion did not expand to the requested files (file_a, file_b, file_h,
+and file_s). Instead, it expanded to:
+/challenge/files/file_a /challenge/files/file_b /challenge/files/file_h /challenge/files/file_s
+hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[bash]
+You got it! Here is your flag!
+pwn.college{Qvp0QVMdlBn2FZkaF86LpeweeVS.dNjM4QDL1kTN0czW}
+```
 
