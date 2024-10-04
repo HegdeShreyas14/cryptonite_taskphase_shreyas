@@ -55,5 +55,17 @@ pwn.college{Qkvq1yfQsoJCUhXt2iw2E9HwDx7.dRjM4QDL1kTN0czW}
 ```
 ### References: Discussed with my friends
 
+## Mixing Globs
+```
+ cd /challenge/files
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run -[cep]*
+Error: your argument is too long! It must be 6 characters or less.
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [cep]*
+You got it! Here is your flag!
+pwn.college{kzDaFyJ6fd7SPOGU6XhzwW2WWkK.dVjM4QDL1kTN0czW}
+```
+### Learnings: 
+
+
 
 
