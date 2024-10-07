@@ -76,3 +76,16 @@ overwrote the initial write of the first half directly to the file. Try append
 mode!
 ```
 
+## Redirecting Errors
+### Learnings : Learnt how to redirect errors 
+```
+ /challenge/run > myflag 2> instructions
+hacker@piping~redirecting-errors:~$ cat myflag
+
+[FLAG] Here is your flag:
+[FLAG] pwn.college{83diP0zsQTJ5bNgFhTwCyA0FAN_.ddjN1QDL1kTN0czW}
+```
+References: None taken
+## Redirecting Input
+
+
