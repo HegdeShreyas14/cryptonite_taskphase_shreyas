@@ -87,5 +87,19 @@ hacker@piping~redirecting-errors:~$ cat myflag
 ```
 References: None taken
 ## Redirecting Input
+```
+ echo COLLEGE > PWN
+hacker@piping~redirecting-input:~$ /challenge/run < PWN
+Reading from standard input...
+Correct! You have redirected the PWN file into my standard input, and I read
+the value 'COLLEGE' out of it!
+Here is your flag:
+pwn.college{I-VABkGkgTNyJ4pTJxlMJRKZgGv.dBzN1QDL1kTN0czW}
+```
+### Learnings: Revisited usage of echo command
+
+## Grepping stored results
+```
+
 
 
