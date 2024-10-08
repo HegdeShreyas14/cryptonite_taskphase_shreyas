@@ -218,4 +218,8 @@ Took me multiple tries to get to the flag
 ### References: Asked a friend on how to use the command.
 
 
+## Piped Data with Tee
+### 
 
+
+##
