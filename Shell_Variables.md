@@ -15,4 +15,9 @@ pwn.college{I4ejrWLyKyD4ZuGTVt3fQIDQSxv.dlTN1QDL1kTN0czW}
 ```
 
 ## Multi-word variables 
-### 
+### Really simple challenge, was able to do easily. 
+```
+ PWN="COLLEGE YEAH"
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{wqoQgiJOUSfMMYWO4Gp9T93NC4N.dBjN1QDL1kTN0czW}
+```
