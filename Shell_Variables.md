@@ -58,3 +58,16 @@ LC_CTYPE=C.UTF-8
 PATH=/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 _=/run/workspace/bin/env
 ```
+
+## Storing Command Output
+### Learnings: Learnt storing commands into variables
+```
+ PWN=$(/challenge/run)
+Congratulations! You have read the flag into the PWN variable. Now print it out
+and submit it!
+hacker@variables~storing-command-output:~$ echo PWN
+PWN
+hacker@variables~storing-command-output:~$ echo $PWN
+pwn.college{Qok4N9MzixjA3vc8Cpn6bY19L8k.dVzN0UDL1kTN0czW}
+```
+It was a fairly simple program.
