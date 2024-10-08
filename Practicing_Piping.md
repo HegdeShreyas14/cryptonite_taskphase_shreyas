@@ -274,6 +274,21 @@ pwn.college{csjxey0vER14bRnswRbaSSDGp6z.dBDO0UDL1kTN0czW}
 This challenge was a bit tricky and I did not completely understand the code.
 ### References: Asked my friend for help. 
 
+## Split piping stderr and stdout 
+### Learnings: Learnt combined use of the commands.
+```
+/challenge/hack > >(/challenge/planet) 2>(/challenge/the)
+You must redirect my standard error into '/challenge/the'!
+Are you sure you're properly redirecting /challenge/hack's standard error into
+'/challenge/the'?
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >(/challenge/planet) 2> >(/challenge/the)
+Congratulations, you have learned a redirection technique that even experts
+struggle with! Here is your flag:
+pwn.college{0aApqHoJ_RkPZOCCPy_d8JZXoC9.dFDNwYDL1kTN0czW}
+```
+The challenge was a bit tricky as I was repeatedly getting the syntax wrong 
+
+
 
 
 
