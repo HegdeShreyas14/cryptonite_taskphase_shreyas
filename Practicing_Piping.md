@@ -220,6 +220,42 @@ Took me multiple tries to get to the flag
 
 ## Piped Data with Tee
 ### 
+```
+/challenge/pwn | tee com | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee pwn | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ cat pwn
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "E7BsDP52"
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee --secret E7BsDP52 | /challenge/college
+Processing...
+/bin/tee: unrecognized option '--secret'
+Try '/bin/tee --help' for more information.
+You must pipe the output of /challenge/pwn into /challenge/college (or 'tee'
+for debugging).
+/challenge/secret needs to the on the receiving end of the output of
+'/challenge/pwn' (or 'tee' for debugging).
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret E7BsDP52
+Processing...
+You must pipe the output of /challenge/pwn into /challenge/college (or 'tee'
+for debugging).
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret E7BsDP52 | /challenge/college
+Processing...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{E7BsDP522h1VehirrianUYRPv7m.dFjM5QDL1kTN0czW}
+```
+This challenge was a bit tricky as I did not understand the use of tee fully, had to run it multiple times to get to the flag, I got the flag without using tee though.
+
+References: Took help from a friend.
 
 
 ##
