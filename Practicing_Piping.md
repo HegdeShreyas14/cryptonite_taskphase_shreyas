@@ -258,4 +258,22 @@ This challenge was a bit tricky as I did not understand the use of tee fully, ha
 References: Took help from a friend.
 
 
-##
+## Writing to Multiple Programs 
+### Learnings : Learnt on how to pass output as input to multiple files 
+```
+/challenge/hack | tee >/challenge/the >/challenge/planet
+ssh-entrypoint: /challenge/the: Permission denied
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee >(/challenge/the ) >(/challenge/planet)
+This secret data must directly and simultaneously make it to /challenge/the and
+/challenge/planet. Don't try to copy-paste it; it changes too fast.
+17622206732120627559
+Congratulations, you have duplicated data into the input of two programs! Here
+is your flag:
+pwn.college{csjxey0vER14bRnswRbaSSDGp6z.dBDO0UDL1kTN0czW}
+```
+This challenge was a bit tricky and I did not completely understand the code.
+### References: Asked my friend for help. 
+
+
+
+
