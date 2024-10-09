@@ -71,3 +71,12 @@ hacker@variables~storing-command-output:~$ echo $PWN
 pwn.college{Qok4N9MzixjA3vc8Cpn6bY19L8k.dVzN0UDL1kTN0czW}
 ```
 It was a fairly simple program.
+
+## Reading Input 
+### Learning: Learnt how to input value to a variable
+```
+ read -p " INPUT:"  PWN
+ INPUT:COLLEGE
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{MgXOuIbmCfLTjD6IJzlOcKTYRD6.dhzN1QDL1kTN0czW}
+```
