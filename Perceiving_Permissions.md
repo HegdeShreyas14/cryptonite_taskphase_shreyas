@@ -25,17 +25,22 @@ hacker@permissions~changing-file-ownership:~$ cat /flag
 pwn.college{wPZlXQnAkITWK0PcdTskfBUOBBZ.dFTM2QDL1kTN0czW}
 ```
 
-##
-###
+## Groups and Files
+### Learnings : Learnt use of chgrp command 
+Straightforward question,followed instructions to reach flag
+```
+chgrp hacker /flag
+hacker@permissions~groups-and-files:~$ cat /flag
+pwn.college{AWxsKQVV_pXus805w_nu1G7BLSC.dFzNyUDL1kTN0czW}
 ```
 
+
+## Fun with group names
+### Fairly doable task , followed instruction to reach the flag
 ```
-
-
-##
-###
-```
-
+ chgrp grp16022 /flag
+hacker@permissions~fun-with-groups-names:~$ cat /flag
+pwn.college{8N2FsT9HtQGTClMkxnnQqExSl56.dJzNyUDL1kTN0czW}
 ```
 
 ##
