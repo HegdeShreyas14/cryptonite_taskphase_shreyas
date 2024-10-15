@@ -187,13 +187,22 @@ pwn.college{U0sim_4t4MTxEHxCihDqjzQ4Eh1.dhDN4QDL1kTN0czW}
 
 
 ## Starting backgrounded Processes
-###
+### Learnings: Learnt how to directly background a process, followed the given instructions to get to the flag.
 ```
+ /challenge/run &
+[1] 82
 
+
+
+hacker@processes~starting-backgrounded-processes:~$ Yay, you started me in the background! Because of that, this text will probably
+overlap weirdly with the shell prompt, but you're used to that by now...
+
+Anyways! Here is your flag!
+pwn.college{QLVTcPDzPL5HrS02WgaQ3IOlG-Z.dlDN4QDL1kTN0czW}
 ```
 ## Process Exit Codes
-###
+### Learnings: 
 ```
 
 ```
-##
+
