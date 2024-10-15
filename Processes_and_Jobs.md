@@ -107,4 +107,93 @@ Don't forget to press Enter to quit me!
 
 
 
+## Backgrounding Processes
+### Learnings: Learnt how to use bg command 
+```
+ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 S+   bash /challenge/run
+root          84 R+   ps -o user=UID,pid,stat,cmd
+
+I don't see a second me!
+
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and then launch a new version of me! You can background me with
+Ctrl-Z (and resume me in the background with 'bg') or, if you're not ready to
+do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 T    bash /challenge/run
+root          89 S+   bash /challenge/run
+root          91 R+   ps -o user=UID,pid,stat,cmd
+
+I found a second version of me, but it's suspended! Please resume it in the
+background with the 'bg' command, then run me again.
+hacker@processes~backgrounding-processes:~$ bg /challenge/run
+[1]+ /challenge/run &
+
+
+
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out.
+hacker@processes~backgrounding-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running *and
+not suspended* in this terminal... Let's check!
+
+UID          PID STAT CMD
+root          82 S    bash /challenge/run
+root         103 S    sleep 6h
+root         104 S+   bash /challenge/run
+root         106 R+   ps -o user=UID,pid,stat,cmd
+
+Yay, I found another version of me running in the background! Here is the flag:
+pwn.college{MXpCj3YKnIth2LLghroVEWKs-Mk.ddDN4QDL1kTN0czW}
+```
+
+## Foregrounding Processes
+### Learnings: Learnt use of fg command.
+```
+ /challenge/run
+To pass this level, you need to suspend me, resume the suspended process in the
+background, and *then* foreground it without re-suspending it! You can
+background me with Ctrl-Z (and resume me in the background with 'bg') or, if
+you're not ready to do that for whatever reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~foregrounding-processes:~$ bg /challenge/run
+[1]+ /challenge/run &
+
+
+
+Yay, I'm now running the background! Because of that, this text will probably
+overlap weirdly with the shell prompt. Don't panic; just hit Enter a few times
+to scroll this text out. After that, resume me into the foreground with 'fg';
+I'll wait.
+hacker@processes~foregrounding-processes:~$ fg /challenge/run
+/challenge/run
+YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
+
+pwn.college{U0sim_4t4MTxEHxCihDqjzQ4Eh1.dhDN4QDL1kTN0czW}
+```
+
+
+## Starting backgrounded Processes
 ###
+```
+
+```
+## Process Exit Codes
+###
+```
+
+```
+##
