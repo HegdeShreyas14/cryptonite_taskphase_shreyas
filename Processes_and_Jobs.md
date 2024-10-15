@@ -201,8 +201,12 @@ Anyways! Here is your flag!
 pwn.college{QLVTcPDzPL5HrS02WgaQ3IOlG-Z.dlDN4QDL1kTN0czW}
 ```
 ## Process Exit Codes
-### Learnings: 
+### Learnings: Learnt how to output the exit code of a command 
 ```
-
+ echo $?
+243
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 243
+CORRECT! Here is your flag:
+pwn.college{cOubckPOhq8c_PitYaoMWkFTQwo.dljN4UDL1kTN0czW}
 ```
 
