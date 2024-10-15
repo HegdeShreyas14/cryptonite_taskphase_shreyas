@@ -79,4 +79,22 @@ It was a fairly simple program.
  INPUT:COLLEGE
 You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{MgXOuIbmCfLTjD6IJzlOcKTYRD6.dhzN1QDL1kTN0czW}
+
 ```
+## Reading Files 
+### Learnings : Learnt to read a file into a variable 
+```
+ read PWN < /challenge/read_me
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{EZG7atikE0g_v6gHY1p2pamk3_K.dBjM4QDL1kTN0czW}
+```
+Followed the instructions to get to the flag.
+
+
+
+
+
+
+
+
+###
