@@ -38,7 +38,20 @@ pwn.college{ogVUczG-kZ9I6vwVAVNitegcr1V.dhTM5QDL1kTN0czW}
 ```
 
 ## Executable Shell Scripts 
-###
+ Took some time to solve the question as I was doing silly errors.
 ```
-
+touch script.sh
+hacker@chaining~executable-shell-scripts:~$ echo /challenge/solve >> script.sh
+hacker@chaining~executable-shell-scripts:~$ chmod a+x /challenge/solve
+chmod: changing permissions of '/challenge/solve': Operation not permitted
+hacker@chaining~executable-shell-scripts:~$ chmod a+x script.sh
+hacker@chaining~executable-shell-scripts:~$ /challenge/solve
+You must make a shellscript in your home directory that will launch
+/challenge/solve, make it executable, and invoke it without explicitly
+specifying 'bash'!
+hacker@chaining~executable-shell-scripts:~$ ./script.sh
+./script.sh: line 1: /challenge/pwn: No such file or directory
+./script.sh: line 2: /challenge/college: No such file or directory
+Congratulations on your shell script execution! Your flag:
+pwn.college{cVSomfFe8cJ2UZX2wRVp2KIfugb.dRzNyUDL1kTN0czW}
 ```
