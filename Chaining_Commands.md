@@ -19,13 +19,25 @@ Great job, you've written your first shell script! Here is the flag:
 pwn.college{YnUfdsTb1rzSqbYTogfSfQdeUM3.dFzN4QDL1kTN0czW}
 ```
 
-##
-###
+## Redirecting Script Output
+### Learnings: Learnt how to pipe the script output
+```
+touch script.sh
+hacker@chaining~redirecting-script-output:~$ echo /challenge/pwn >> script.sh
+hacker@chaining~redirecting-script-output:~$ echo /challenge/college >> script.sh
+hacker@chaining~redirecting-script-output:~$ bash script  | /challenge/solve
+Please name your script with an '.sh' extension. This isn't strictly necessary
+eventually, but we'll keep things explicit for the next few levels.
+The data piped from /challenge/pwn did not match what I expected. I
+re-randomize the data every time you input a new line to the shell, so you must
+get it right in one shot! Make sure to pipe the output from your script to
+/challenge/solve.
+hacker@chaining~redirecting-script-output:~$ bash script.sh  | /challenge/solve
+Correct! Here is your flag:
+pwn.college{ogVUczG-kZ9I6vwVAVNitegcr1V.dhTM5QDL1kTN0czW}
 ```
 
-```
-
-##
+## Executable Shell Scripts 
 ###
 ```
 
