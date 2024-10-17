@@ -511,10 +511,15 @@ hacker@permissions~permissions-setting-practice:~$ /flag
 /flag: line 1: pwn.college{wwvblSN3UEIo7o_XWqpYGr3SXIS.dNTM5QDL1kTN0czW}
 ```
 
-##
-###
+## The SUID bit
+### Learnings:Learnt about the Set User ID bit
 ```
-
+ chmod a+s /challenge/getroot
+hacker@permissions~the-suid-bit:~$ /challenge/getroot
+SUCCESS! You have set the suid bit on this program, and it is running as root!
+Here is your shell...
+root@permissions~the-suid-bit:~# cat /flag
+pwn.college{Ez5A76-ydvZTtQ6nqiCAB4lswXY.dNTM2QDL1kTN0czW}
 ```
 
 
