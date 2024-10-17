@@ -43,6 +43,34 @@ hacker@permissions~fun-with-groups-names:~$ cat /flag
 pwn.college{8N2FsT9HtQGTClMkxnnQqExSl56.dJzNyUDL1kTN0czW}
 ```
 
+## Changing Permissions
+### Learnings : Learnt use of chmod command 
+Read(r),write(w),execute(x)- all permissions that are available, order: owner,owning group,rest all.
+```
+ chmod u+r /flag
+hacker@permissions~changing-permissions:~$ cat /flag
+cat: /flag: Permission denied
+hacker@permissions~changing-permissions:~$ chmod a+r /flag
+hacker@permissions~changing-permissions:~$ cat /flag
+pwn.college{IRDE42lTkSXY0wCxj_XtlBGkRn6.dNzNyUDL1kTN0czW}
+```
+
+## Executable Files 
+### Similar to the previous question, was able to do without any issues.
+```
+ chmod a+x /challenge/run
+hacker@permissions~executable-files:~$ /challenge/run
+Successful execution! Here is your flag:
+pwn.college{EWN1bbO3kYIK4d4PVXzVw0Bw3Bn.dJTM2QDL1kTN0czW}
+```
+
+
+##
+###
+```
+
+```
+
 ##
 ###
 ```
