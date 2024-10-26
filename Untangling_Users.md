@@ -22,7 +22,7 @@ pwn.college{YEjO3B3kHmFbCDbTBpMXylr_lxO.dZTN0UDL1kTN0czW}
 ```
 
 ## Cracking Password
-### Learnings: Learnt how to 
+### Learnings: Learnt how to use the john command to get the passwords
 ```
  john /challenge/shadow-leak
 Loaded 1 password hash (crypt, generic crypt(3) [?/64])
